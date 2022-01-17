@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+#particles-js {
+    /* height: 100vh; */
+    background-color:black;
+  }
+  .middle {
+      display: grid;
+      justify-content: center;
+      color: firebrick;
+      margin-top: 0px;
+      z-index: 100px;
+      position: relative;
+      /* padding: 50px; */
+      font-size: 32px;
+  }
