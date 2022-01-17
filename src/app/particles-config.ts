@@ -1,4 +1,5 @@
 export const ParticlesConfig = {
+  preset: "seaAnemone",
     particles: {
       number: {
         value: 200,
@@ -51,12 +52,13 @@ export const ParticlesConfig = {
         random: true,
         straight: false,
         out_mode: 'out',
-        bounce: true,
+        bounce: false,
         attract: {
           enable: true,
-          rotateX: 200,
+          rotateX: 1200,
           rotateY: 200
-        }
+        },
+        warp: true
       }
     },
     interactivity: {
