@@ -13,10 +13,10 @@ export class AppComponent implements OnInit{
   title = 'particlesJsAngular';
 
   ngOnInit() {
-    this.invokeParticles();
+    // this.invokeParticles();
   }
 
-  invokeParticles() {
-    particlesJS('particles-js', ParticlesConfig, function() {});
-  }
+  // invokeParticles() {
+  //   particlesJS('particles-js', ParticlesConfig, function() {});
+  // }
 }

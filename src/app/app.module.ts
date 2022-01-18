@@ -3,10 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgParticlesModule } from "ng-particles";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ParticlesJsComponent } from './particles-js/particles-js.component';
+import { NebulaJsComponent } from './nebula-js/nebula-js.component';
+import { ThreeJsComponent } from './three-js/three-js.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ParticlesJsComponent,
+    NebulaJsComponent,
+    ThreeJsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
