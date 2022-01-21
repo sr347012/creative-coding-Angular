@@ -91,8 +91,24 @@ export class ThreeGlobeComponent implements OnInit {
       new THREE.MeshBasicMaterial({ 
         map: new THREE.TextureLoader().load('./assets/neptune.jpg')
       }));
-      scene.add(neptune);            
+      scene.add(neptune);      
+      //=============================================================
+      const starGeometry = new THREE.BufferGeometry();
+      const starMaterial = new THREE.PointsMaterial({color: 0xffffff});
+      var starVertices = [];
+      for (let i=0; i<1000; i++) {
+        const x = (Math.random() - 0.5) *500;
+        const y = (Math.random() - 0.5) *200;
+        const z = -Math.random() *1000 ;
+         starVertices.push(x,y,z);
+      }
+      // console.log(starVertices);
+      starGeometry.setAttribute('position', 
+      new THREE.Float32BufferAttribute(starVertices, 3));
 
+      var stars = new THREE.Points(starGeometry, starMaterial);
+      scene.add(stars);      
+      //=============================================================
     camera.position.z = 30;
 
     var animate = function () {
