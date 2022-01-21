@@ -31,11 +31,11 @@ export class ThreeJsComponent implements OnInit {
       0.1,
       1000
     );
-    var speedX = 0.01;
+    // var speedX = 0.01;
 
     var renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
+    // document.body.appendChild(renderer.domElement);
     // console.log(this.threeJs);
     // this.threeJs?.nativeElement.appendChild(renderer.domElement);
 

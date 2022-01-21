@@ -7,6 +7,7 @@ import { ParticlesJsComponent } from './particles-js/particles-js.component';
 import { NebulaJsComponent } from './nebula-js/nebula-js.component';
 import { ThreeJsComponent } from './three-js/three-js.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ThreeGlobeComponent } from './three-globe/three-globe.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ParticlesJsComponent,
     NebulaJsComponent,
     ThreeJsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ThreeGlobeComponent
   ],
   imports: [
     BrowserModule,
