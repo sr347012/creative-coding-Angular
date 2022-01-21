@@ -33,8 +33,13 @@ export class ThreeJsComponent implements OnInit {
     );
     // var speedX = 0.01;
 
-    var renderer = new THREE.WebGLRenderer();
+    var canvasQuery = document.querySelector('canvas') as HTMLCanvasElement;
+    
+    var renderer = new THREE.WebGLRenderer({
+      antialias: true, canvas: canvasQuery
+    });
     renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(window.devicePixelRatio);
     // document.body.appendChild(renderer.domElement);
     // console.log(this.threeJs);
     // this.threeJs?.nativeElement.appendChild(renderer.domElement);

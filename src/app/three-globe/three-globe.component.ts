@@ -20,13 +20,14 @@ export class ThreeGlobeComponent implements OnInit {
       1000
     );
     // var speedX = 0.01;
-
+    var canvasQuery = document.querySelector('canvas') as HTMLCanvasElement;
+    
     var renderer = new THREE.WebGLRenderer({
-      antialias: true
+      antialias: true, canvas: canvasQuery
     });
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(window.devicePixelRatio);
-    document.body.appendChild(renderer.domElement);
+    // document.body.appendChild(renderer.domElement);
 
       //============================================================
       var earthGeometry = new THREE.SphereGeometry(5, 50, 50);

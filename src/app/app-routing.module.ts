@@ -4,11 +4,14 @@ import { ParticlesJsComponent } from './particles-js/particles-js.component';
 import { NebulaJsComponent } from './nebula-js/nebula-js.component';
 import { ThreeJsComponent } from './three-js/three-js.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ThreeGlobeComponent } from './three-globe/three-globe.component';
 
 const routes: Routes = [  
   { path: 'particlesJs', component: ParticlesJsComponent },
 { path: 'nebulaJs', component: NebulaJsComponent },
 { path: 'threeJs', component: ThreeJsComponent },
+{ path: 'solarSystem', component: ThreeGlobeComponent },
+
 { path: '**', component: PageNotFoundComponent}
 ];
 
