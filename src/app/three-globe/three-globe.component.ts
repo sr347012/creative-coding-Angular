@@ -21,7 +21,7 @@ export class ThreeGlobeComponent implements OnInit {
     );
     // var speedX = 0.01;
     var canvasQuery = document.querySelector('canvas') as HTMLCanvasElement;
-    
+
     var renderer = new THREE.WebGLRenderer({
       antialias: true, canvas: canvasQuery
     });
@@ -114,6 +114,9 @@ export class ThreeGlobeComponent implements OnInit {
 
     var animate = function () {
       requestAnimationFrame(animate);
+
+      stars.rotation.y += 0.00001;
+      stars.rotation.x += 0.00001;
 
       sun.position.set(-20,0,25);
       sun.scale.set(2,2.5,2);
